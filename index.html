@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="elephant.svg">
+<title>
+    【Linux】Fedora36 KDE Plasma Spinでの日本語入力
+</title>
+</head>
+<body>
+    <p class="toukoubi">投稿日:2022/8/11</p><br>
+    <div style="background-color:#FFF0F0;"><a href="https://yoppy42.github.io/">自己紹介・ホーム</a>><a href="https://yoppy42.github.io/category2/">パソコン</a>>【Linux】Fedora36 KDE Plasma Spinでの日本語入力</div>
+    <h1>【Linux】Fedora36 KDE Plasma Spinでの日本語入力</h1>
+    <p><a href="https://spins.fedoraproject.org/ja/kde/">Fedora36 KDE Plasma Spin</a>をインストールしたら、<br>Ibusがインストールされているのに日本語入力ができなかったので、Fcitx5で日本語入力する方法を紹介します。</p>
+    <h2>１．更新プログラムのインストール</h2>
+    <p>インストールしたてだと沢山の更新プログラムがあるので<br>Discover > Up to date　でインストールし、再起動します。</p>
+    <h2>２．Fcitx5のインストール</h2>
+    <P><strong>あなたはシステム管理者から通常の講習を受けましたね？？？？？</strong></P>
+    <div class="tanmatsu">
+        
+        $ sudo dnf install fcitx5 fcitx5-configtool fcitx5-mozc kcm-fcitx5 fcitx5-qt
+    </div>
+    <p>終わったら再起動します。</p>
+    <h2>３．Fcitx5を選ぶ</h2>
+    <p>アプリケーションランチャー > 設定 > 入力メソッドのセレクター　　を開きます。</p>
+    <img src="Screenshot_20220811_192352.webp" alt="開いたウィンドウ" width="40%">
+    <p>「fcitx5を使用する。」を選び、再ログインします。</p>
+    <h2>４．設定</h2>
+    <p>もう一回開いて、設定を押します。</p>
+    <img src="Screenshot_20220811_195642.webp" alt="設定" width="80%">
+    <p>画像のように、<br>
+    <b>入力メゾットオフ</b><br>
+    キーボード　日本語<br>
+    <b>入力メゾットオン</b><br>
+    Mozc<br><br>と設定します。</p>
+    <img src="Screenshot_20220811_201328.webp" alt="設定" width="60%"><br>
+    <p>グローバルオプションを設定...から、入力メゾットの切り替えに全角半角キーを設定します。</p>
+    <img src="Screenshot_20220811_201800.webp" alt="できたああああああああ" width="100%">
+    <p>Windowsみたいな感じでできるようになったと思います。Ibusはアンインストールしても大丈夫です。<br>とても良いOSなのでFedora KDE Plasma Spinをぜひ使ってみてください！</p>
+    <hr>
+    <address>
+    Yoppy42
+    <a href="mailto:happy-zohsan@yahoo.co.jp">happy-zohsan@yahoo.co.jp</a>　メールはこちらへ</address><br>
+    Twitter, <a href="https://creativecommons.org/licenses/by/4.0" title="Creative Commons Attribution 4.0">CC 表示 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=59971011">リンク</a>による
+
+    
+<!--はぁー書くの疲れたー-->
+</body>
+</html>
